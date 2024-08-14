@@ -1,1 +1,1 @@
-# yogante-book-social-network
+# book-social-network
