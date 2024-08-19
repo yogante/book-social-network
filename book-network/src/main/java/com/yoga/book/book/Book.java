@@ -2,6 +2,7 @@ package com.yoga.book.book;
 
 
 import com.yoga.book.common.BaseEntity;
+import com.yoga.book.feedback.Feedback;
 import com.yoga.book.history.BookTransactionHistory;
 import com.yoga.book.user.User;
 import jakarta.persistence.*;
