@@ -1,13 +1,12 @@
 package com.yoga.book.book;
 
-import com.yoga.book.common.PageResponse;
 import com.yoga.book.file.FileUtils;
 import com.yoga.book.history.BookTransactionHistory;
 import org.springframework.stereotype.Service;
 
 @Service
 public class BookMapper {
-    public Book toBook(BookRequest request){
+    public Book toBook(BookRequest request) {
         return Book.builder()
                 .id(request.id())
                 .title(request.title())
@@ -19,7 +18,7 @@ public class BookMapper {
                 .build();
     }
 
-    public BookResponse toBookResponse(Book book){
+    public BookResponse toBookResponse(Book book) {
         return BookResponse.builder()
                 .id(book.getId())
                 .title(book.getTitle())
@@ -34,7 +33,7 @@ public class BookMapper {
                 .build();
     }
 
-    public BorrowedBookResponse toBorrowedBookResponse(BookTransactionHistory history){
+    public BorrowedBookResponse toBorrowedBookResponse(BookTransactionHistory history) {
         return BorrowedBookResponse.builder()
                 .id(history.getId())
                 .title(history.getBook().getTitle())
